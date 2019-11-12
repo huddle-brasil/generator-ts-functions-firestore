@@ -1,0 +1,26 @@
+image: guilhermebresser/node
+
+pipelines:
+  branches:
+    dev:
+      - step:
+          name: Build and Deploy Working
+          deployment: production
+          caches:
+            - node
+          script:
+            - cd functions
+            - npm install
+            - npm install --global firebase-tools
+            - firebase deploy --only functions --token=1/8pXxgFtA0ogWIsIWQH5N96oahyZhwaNApz85gl0EiR4 --project <%= appName %>-dev --non-interactive
+    master:
+      - step:
+          name: Build and Deploy Master
+          deployment: production
+          caches:
+            - node
+          script:
+            - cd functions
+            - npm install
+            - npm install --global firebase-tools
+            - firebase deploy --only functions --token=1/8pXxgFtA0ogWIsIWQH5N96oahyZhwaNApz85gl0EiR4 --project <%= appName %> --non-interactive

@@ -1,0 +1,15 @@
+{
+    "name": "<%= appName %>",
+    "description": "<%= appDescription %>",
+    "version": "<%= appVersion %>",
+    "author": {
+        "name": "<%= authorName %>",
+        "email": "<%= authorEmail %>"
+    },
+    "license": "MIT",
+    "dependencies": {
+    },
+    "engine": {
+        "node": ">=5.0.0"
+    }
+}

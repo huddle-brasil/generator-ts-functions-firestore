@@ -1,6 +1,6 @@
 {
   "name": "generator-ts-functions-firestore",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Project intended to be used as a template for projects using typescript, functions and firestore",
   "files": [
     "generators"

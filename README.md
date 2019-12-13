@@ -7,7 +7,7 @@ Using npm:
 ```
 $ npm install -g yo
 $ npm i -g generator-ts-functions-firestore
-$ npm yo ts-functions-firestore
+$ yo ts-functions-firestore
 ```
 
 If necessary edit default project on `.firebaserc`
